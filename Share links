@@ -163,3 +163,12 @@ function NewsList(props) {
 
 export default NewsList;
 
+
+
+
+
+
+
+
+
+https://codesandbox.io/s/small-night-ew29qm?file=/src/App.js
