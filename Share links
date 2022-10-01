@@ -6,3 +6,110 @@ https://www.openstreetmap.org/export#map=19/51.50335/-0.07909
 
 
 ------------------------------------------------------------------------------------------------------
+
+((((( App.js )))))
+
+import "./styles.css";
+
+export default function App() {
+  return (
+    <body>
+
+    {/* Starting page  */}
+    <div id="startPage">
+      <h1>Warren & Friends</h1>
+      <h2>Your top news source</h2>
+      <img src="https://media.istockphoto.com/photos/globe-on-moss-in-forest-environment-concept-picture-id943875208?k=20&m=943875208&s=612x612&w=0&h=D5UqV5nPocnnd3Be_6EYoALgF5hMk2_w5WA2XBsCbW8=" alt=""/>
+      <br></br>
+      <button onClick= {test} id="startButton">START</button>
+    </div>
+
+    {/* Continent page */}
+    <div id="secondPage">
+      <h1> Choose your region </h1>
+      <br></br><br></br><br></br>
+
+      <img src="https://freepngclipart.com/download/texas/55640-united-citizenship-travel-flag-immigration-states-american.png" alt="" id="usa" onClick={us}/>
+
+
+      <img src="http://assets.stickpng.com/thumbs/58889309bc2fc2ef3a1860ae.png" alt="" id="britain" onClick={en}/>
+
+      <img src="https://www.pngall.com/wp-content/uploads/12/India-Map-PNG-Pic.png" alt="" id="india" onClick={ind}/>
+
+      <img src="https://www.transparentpng.com/thumb/australia-flag/J8klxs-australia-flag-free-png.png" alt="" id="aus" onClick={au}/>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/UN_emblem_blue.svg/200px-UN_emblem_blue.svg.png" alt="" id="un" onClick={uni}/>
+
+    </div>
+
+    </body>
+  );
+}
+
+function test() {
+  document.getElementById("startPage").style.display = "none";
+  document.getElementById("secondPage").style.visibility = "visible";
+}
+
+function us() {
+  document.getElementById("secondPage").style.visibility = "hidden";
+}
+
+function en() {
+  document.getElementById("secondPage").style.visibility = "hidden";
+}
+function ind() {
+  document.getElementById("secondPage").style.visibility = "hidden";
+}
+function au() {
+  document.getElementById("secondPage").style.visibility = "hidden";
+}
+function uni() {
+  document.getElementById("secondPage").style.visibility = "hidden";
+}
+
+
+
+
+((((( CSS )))))
+
+body{
+  background-color: lightgreen;
+}
+
+#startPage {
+  font-family: sans-serif;
+  text-align: center;
+  display: visible;
+}
+
+#startButton {
+  height: 100px;
+  width: 200px;
+}
+
+#secondPage{
+  text-align: center;
+  visibility:hidden;
+}
+
+#usa{
+  width: 20%;
+}
+
+
+#britain{
+  width: 18%;
+}
+
+#india{
+  width: 15%;
+}
+
+#aus{
+  width: 17%;
+}
+
+#un{
+  width: 17%;
+}
