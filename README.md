@@ -7,8 +7,8 @@ Idea: A website for people of all ages with educational resources on climate cha
 
 
 Roles:
-Owen - API accessing 
-Sohum - Front end and sythisizing parts of project
-Binh - Front end and sythisizing parts of project
-Ash - Iceburg trivia minigame
-Joanne - Seed catcher educational minigame
+Owen - API accessing; 
+Sohum - Front end and sythisizing parts of project;
+Binh - Front end and sythisizing parts of project;
+Ash - Iceburg trivia minigame;
+Joanne - Seed catcher educational minigame;
